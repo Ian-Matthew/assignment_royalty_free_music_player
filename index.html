@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+
+    <script src="https://use.fontawesome.com/0b016c08bd.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Royalty Free Music Player</title>
+</head>
+
+<body>
+    <div class="wrapper container-fluid">
+        <header class="container">
+            <h3 class="page-header">Royalty Free Music Player</h3>
+        </header>
+        <div class="main-content">
+            <section id="song-list" class="container-fluid">
+                <ul class="list-group">
+                    <li class=" list-group-item">
+                        <i class="pull-left btn btn-lg fa fa-play play-button" aria-hidden="true"></i>
+                        <h3 class="list-group-item-heading">Song Name</h3>
+                        <p class="list-group-item-text">Artist</p>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="pull-left btn btn-lg fa fa-play play-button" aria-hidden="true"></i>
+                        <h3 class="list-group-item-heading">Song Name</h3>
+                        <p class="list-group-item-text">Artist</p>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="pull-left btn btn-lg fa fa-play play-button" aria-hidden="true"></i>
+                        <h3 class="list-group-item-heading">Song Name</h3>
+                        <p class="list-group-item-text">Artist</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="controls" class="row">
+                <div class="col-xs-3">
+                    <button>
+                    <i class="fa fa-step-backward" id="back" aria-hidden="true"></i>
+                </button>
+                    <span id="play/pause"><button><i class="fa fa-play" id= aria-hidden="true"></i></button></span>
+
+                    <button><i class="fa fa-step-forward fa-3x" aria-hidden="true"></i></button>
+                </div>
+                <div class="col-xs-5">
+                    <h3 id="currentSongTitle">Song</h3>
+                    <p id="currentSongArtist">Artist</p>
+                </div>
+
+
+            </section>
+        </div>
+
+    </div>
+</body>
+
+
+</html>
