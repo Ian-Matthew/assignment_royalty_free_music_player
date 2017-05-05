@@ -15,78 +15,81 @@
 </head>
 
 <body>
-    <div class="container ">
+    <div class="container">
+
         <header class="header">
+
             <h2>
-                <i class="fa fa-heart"></i>
-              music machine
-              <hr>
+                i <i class="fa fa-heart"></i> <span id="now-playing">music machine</span>
             </h2>
+            <hr>
+
         </header>
+
         <secton id="player">
-            <div class="btn btn-block song-item-group">
+
+            <div id="springish" class="btn btn-block song-item-group play-button">
+                <i class="fa fa-play fa-lg pull-left"></i>
+                <div class="song-info">
+                    <h3 class="song-title">Springish</h3>
+                    <p class="artist-name">Gillicuddy</p>
+                </div>
+                <audio id="Sprinish-mp3" src="music\Springish.mp3">
+            </div>
+
+            <div id="gentleman" class="song-item-group btn btn-block">
                 <i class="fa fa-play fa-lg pull-left play-button"></i>
                 <div class="song-info">
                     <div class="song-title">
-                        <h3>Song Title</h3>
+                        <h3>A gentleman</h3>
                     </div>
                     <div class="artist-name">
-                        <p>Artist</p>
+                        <p>Podington Bear</p>
                     </div>
                 </div>
-
+                <i class="fa fa-music pull-right"></i>
             </div>
 
-            <div class="song-item-group btn btn-block">
+            <div id="nightOwl" class="btn btn-block song-item-group">
                 <i class="fa fa-play fa-lg pull-left play-button"></i>
                 <div class="song-info">
                     <div class="song-title">
-                        <h3>Song Title</h3>
+                        <h3>Night Owl</h3>
                     </div>
                     <div class="artist-name">
-                        <p>Artist</p>
+                        <p>Broke For Free</p>
                     </div>
                 </div>
-
             </div>
-            <div class="btn btn-block song-item-group">
+
+            <div id="curiousCase" class="btn btn-block song-item-group">
                 <i class="fa fa-play fa-lg pull-left play-button"></i>
                 <div class="song-info">
                     <div class="song-title">
-                        <h3>Song Title</h3>
+                        <h3>Curious Case</h3>
                     </div>
                     <div class="artist-name">
-                        <p>Artist</p>
+                        <p>Blue Dot</p>
                     </div>
                 </div>
+            </div>
 
-            </div>
-            <div class="btn btn-block song-item-group">
-                <i class="fa fa-play fa-lg pull-left play-button"></i>
-                <div class="song-info">
-                    <div class="song-title">
-                        <h3>Song Title</h3>
-                    </div>
-                    <div class="artist-name">
-                        <p>Artist</p>
-                    </div>
-                </div>
-            </div>
+            <audio id="Song" src="">
+
+            </audio>
+
         </secton>
+
         <section id="footer">
             <div id="controls">
                 <h3 class="btn btn-lg" id="previous">previous</h3>
-                <h3 class="btn btn-lg" id="play-pause">pause</h3>
+                <h3 class="btn btn-lg" id="play-pause">play</h3>
                 <h3 class="btn btn-lg" id="next">next</h3>
             </div>
-
-
-
-
         </section>
-    </div>
+        </div>
 
-    <script src="app.js"></script>
+        <script src="app.js"></script>
 </body>
 
 
