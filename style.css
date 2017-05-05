@@ -1,0 +1,40 @@
+
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.fa{
+    color: red;
+}
+
+.play-button{
+    padding-top: 5%;
+}
+.song-info{
+    padding-left: 5%
+}
+
+.song-item-group{
+
+    text-align: left;
+}
+
+.artist-name{
+    padding-left: .25%;
+}
+
+#footer{
+  display: inline;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1%;
+  background-color: #efefef;
+  text-align: left;
+}
+#controls h3{
+    padding: 2%;
+    color:green;
+}

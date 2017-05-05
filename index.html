@@ -15,49 +15,78 @@
 </head>
 
 <body>
-    <div class="wrapper container-fluid">
-        <header class="container">
-            <h3 class="page-header">Royalty Free Music Player</h3>
+    <div class="container ">
+        <header class="header">
+            <h2>
+                <i class="fa fa-heart"></i>
+              music machine
+              <hr>
+            </h2>
         </header>
-        <div class="main-content">
-            <section id="song-list" class="container-fluid">
-                <ul class="list-group">
-                    <li class=" list-group-item">
-                        <i class="pull-left btn btn-lg fa fa-play play-button" aria-hidden="true"></i>
-                        <h3 class="list-group-item-heading">Song Name</h3>
-                        <p class="list-group-item-text">Artist</p>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="pull-left btn btn-lg fa fa-play play-button" aria-hidden="true"></i>
-                        <h3 class="list-group-item-heading">Song Name</h3>
-                        <p class="list-group-item-text">Artist</p>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="pull-left btn btn-lg fa fa-play play-button" aria-hidden="true"></i>
-                        <h3 class="list-group-item-heading">Song Name</h3>
-                        <p class="list-group-item-text">Artist</p>
-                    </li>
-                </ul>
-            </section>
-            <section id="controls" class="row">
-                <div class="col-xs-3">
-                    <button>
-                    <i class="fa fa-step-backward" id="back" aria-hidden="true"></i>
-                </button>
-                    <span id="play/pause"><button><i class="fa fa-play" id= aria-hidden="true"></i></button></span>
-
-                    <button><i class="fa fa-step-forward fa-3x" aria-hidden="true"></i></button>
-                </div>
-                <div class="col-xs-5">
-                    <h3 id="currentSongTitle">Song</h3>
-                    <p id="currentSongArtist">Artist</p>
+        <secton id="player">
+            <div class="btn btn-block song-item-group">
+                <i class="fa fa-play fa-lg pull-left play-button"></i>
+                <div class="song-info">
+                    <div class="song-title">
+                        <h3>Song Title</h3>
+                    </div>
+                    <div class="artist-name">
+                        <p>Artist</p>
+                    </div>
                 </div>
 
+            </div>
 
-            </section>
-        </div>
+            <div class="song-item-group btn btn-block">
+                <i class="fa fa-play fa-lg pull-left play-button"></i>
+                <div class="song-info">
+                    <div class="song-title">
+                        <h3>Song Title</h3>
+                    </div>
+                    <div class="artist-name">
+                        <p>Artist</p>
+                    </div>
+                </div>
 
+            </div>
+            <div class="btn btn-block song-item-group">
+                <i class="fa fa-play fa-lg pull-left play-button"></i>
+                <div class="song-info">
+                    <div class="song-title">
+                        <h3>Song Title</h3>
+                    </div>
+                    <div class="artist-name">
+                        <p>Artist</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn btn-block song-item-group">
+                <i class="fa fa-play fa-lg pull-left play-button"></i>
+                <div class="song-info">
+                    <div class="song-title">
+                        <h3>Song Title</h3>
+                    </div>
+                    <div class="artist-name">
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </div>
+        </secton>
+        <section id="footer">
+            <div id="controls">
+                <h3 class="btn btn-lg" id="previous">previous</h3>
+                <h3 class="btn btn-lg" id="play-pause">pause</h3>
+                <h3 class="btn btn-lg" id="next">next</h3>
+            </div>
+
+
+
+
+        </section>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 
