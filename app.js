@@ -1,9 +1,5 @@
 //Model -- things to keep track of.
-
-
-
 var model = {
-    initialized: false,
     nowPlaying: "",
     isPaused: true,
     songs: [{
@@ -35,11 +31,8 @@ var model = {
 
 //Grab needed elements from DOM
 var songButtons = $(".song-item-group");
-
 var audio = $("<audio></audio>");
-
 $("body").append(audio);
-
 
 //Music Player Actions/Controls
 function PlayAudio() {
@@ -55,17 +48,14 @@ function playPausetoggle() {
     if (model.isPaused) {
         PlayAudio();
         model.isPaused = false;
-
-
     } else {
         PauseAudio();
         model.isPaused = true;
     }
 }
 
-// Audio Event Handlers
+// Button Event Handlers
 songButtons.click(function() {
-
     var selectedSongId = $(this).attr("id");
 
     var selectedSong = model.songs[selectedSongId];
@@ -84,6 +74,51 @@ songButtons.click(function() {
         PlayAudio();
     }
 });
+
+//Event Handlers for Control panel
+var nextButton = $("#next");
+var previousButton = $("#previous");
+var playPauseButton = $("#play-pause");
+var listLen = model.songs.length;
+
+//Next Button
+nextButton.click(function() {
+    var currentIdx = model.nowPlaying.id;
+    var newIdx = clamp(currentIdx + 1, listLen - 1);
+    model.nowPlaying = model.songs[newIdx];
+    audio.attr("src", model.nowPlaying.src);
+    model.isPaused = false;
+    renderIcons();
+    PlayAudio();
+});
+
+//Previous Button
+previousButton.click(function() {
+    var currentIdx = model.nowPlaying.id;
+    var newIdx = clamp(currentIdx - 1, listLen - 1);
+    model.nowPlaying = model.songs[newIdx];
+    audio.attr("src", model.nowPlaying.src);
+    model.isPaused = false;
+    renderIcons();
+    PlayAudio();
+});
+
+// Play / Pause button
+
+playPauseButton.click(function() {
+    playPausetoggle();
+    renderIcons();
+})
+
+function clamp(num, max) {
+    if (num < 0) {
+        return 0;
+    }
+    if (num >= max) {
+        return max;
+    }
+    return num;
+}
 
 function renderIcons() {
 
