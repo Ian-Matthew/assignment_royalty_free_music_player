@@ -1,7 +1,12 @@
 
 body{
+    background-color: #FFFFFF;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.headerr{
+    display: inline;
 }
 .fa{
     color: red;
@@ -15,10 +20,13 @@ body{
 }
 
 .song-item-group{
-
     text-align: left;
 }
 
 .artist-name{
     padding-left: .25%;
+}
+
+.active{
+    border-color: red;
 }

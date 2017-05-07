@@ -4,92 +4,70 @@
 <head>
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
-
     <script src="https://use.fontawesome.com/0b016c08bd.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
     <link rel="stylesheet" href="style.css">
-
     <title>Royalty Free Music Player</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
 
         <header class="header">
-
             <h2>
                 i <i class="fa fa-heart"></i> <span id="now-playing">music machine</span>
             </h2>
             <hr>
-
         </header>
 
-        <secton id="player">
+        <main id="player">
 
-            <div id="0" class="btn btn-block song-item-group ">
-                <i class="play-button fa fa-play fa-lg pull-left" data-set-parentId="1"></i>
+            <div id="0" class="song-item-group btn btn-block">
+                <i class="play-button fa fa-play fa-lg pull-left"></i>
                 <div class="song-info">
                     <h3 class="song-title">Springish</h3>
                     <p class="artist-name">Gillicuddy</p>
                 </div>
-                <audio id="Sprinish-mp3" src="music\Springish.mp3">
             </div>
 
             <div id="1" class="song-item-group btn btn-block">
-                <i data-set-parentId="1" class="fa fa-play fa-lg pull-left play-button"></i>
+                <i class="play-button fa fa-play fa-lg pull-left"></i>
                 <div class="song-info">
-                    <div class="song-title">
-                        <h3>A gentleman</h3>
-                    </div>
-                    <div class="artist-name">
-                        <p>Podington Bear</p>
-                    </div>
+                    <h3 class="song-title">A gentleman</h3>
+                    <p class="artist-name">Podington Bear</p>
                 </div>
-                <i class="fa fa-music pull-right"></i>
             </div>
 
-            <div id="2" class="btn btn-block song-item-group">
-                <i data-set-parentId="2" class="fa fa-play fa-lg pull-left play-button"></i>
+
+            <div id="2" class="song-item-group btn btn-block">
+                <i class="play-button fa fa-play fa-lg pull-left"></i>
                 <div class="song-info">
-                    <div class="song-title">
-                        <h3>Night Owl</h3>
-                    </div>
-                    <div class="artist-name">
-                        <p>Broke For Free</p>
-                    </div>
+                    <h3 class="song-title">Night Owl</h3>
+                    <p class="artist-name">Broke For Free</p>
                 </div>
             </div>
 
             <div id="3" class="btn btn-block song-item-group">
-                <i data-set-parentId="3" class="fa fa-play fa-lg pull-left play-button"></i>
+                <i class=" play-button fa fa-play fa-lg pull-left "></i>
                 <div class="song-info">
-                    <div class="song-title">
-                        <h3>Curious Case</h3>
-                    </div>
-                    <div class="artist-name">
-                        <p>Blue Dot</p>
-                    </div>
+                    <h3 class="song-title">Curious Case</h3>
+                    <p class="artist-name">Blue Dot</p>
                 </div>
             </div>
 
-            <audio id="song" src="">
+            <audio id="song"></audio>
+        </main>
 
-            </audio>
-
-        </secton>
-
-        <section id="footer">
+        <footer id="footer">
             <div id="controls">
-                <h3 class="btn btn-lg" id="previous">previous</h3>
-                <h3 class="btn btn-lg" id="play-pause">play</h3>
-                <h3 class="btn btn-lg" id="next">next</h3>
+                <h3 id="previous" class="btn btn-lg">previous</h3>
+                <h3 id="play-pause" class="btn btn-lg">play</h3>
+                <h3 id="next" class="btn btn-lg">next</h3>
             </div>
-        </section>
-        </div>
+        </footer>
+    </div>
 
-        <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 
